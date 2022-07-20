@@ -1,44 +1,50 @@
+import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
-import java.util.Map;
+import java.util.Properties;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        // make an  HTTP requisiton to take JSON info
-        String url = "https://alura-filmes.herokuapp.com/conteudos";
-        URI adress = URI.create(url);
-        HttpClient client = HttpClient.newHttpClient(); // var can be used
-        HttpRequest request = HttpRequest.newBuilder(adress).GET().build();
-        HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-        String body = response.body();
+        //get api keys
+        Properties props = new Properties();
+        InputStream path = new FileInputStream("./local.properties");
+        props.load(path);
+        String NASA_API_KEY = props.getProperty("NASA_API_KEY");
 
-        // get the concern data (title, image, rate) and keep it in a string
-        var parser = new JsonParser();
-        List<Map<String, String>> filmList = parser.parse(body);
+        // make an  HTTP requisiton to take JSON info
+        
+        // IMDB
+        // String url = "https://alura-filmes.herokuapp.com/conteudos";
+        // ContentExtractor extractor = new IMDBContentExtractor();
+
+        // nasa
+        String url = "https://api.nasa.gov/planetary/apod?api_key="+ NASA_API_KEY +"&start_date=2022-07-16";
+        ContentExtractor extractor = new NasaContentExtractor();
+        
+        ClientHttp http = new ClientHttp();
+        String json = http.searchData(url);        
+        
         
         // show and manipulate data
-        var stickerFactory = new StikerFactory();
-        for (Map<String,String> film : filmList) {
+        List<Content> nasaContent = extractor.contentExtractor(json);
 
-            String urlImage = film.get("image");
-            String title = film.get("title");
+        var stickerFactory = new StikerFactory();
+        for (int i = 0; i < 5; i++) {
+
+            Content content = nasaContent.get(i);
             InputStream inputStream = 
-                                new URL(urlImage)
+                                new URL(content.urlImage())
                                  .openStream();
-            String fileName = title + ".png";
+            String fileName = content.title() + ".png";
             
             stickerFactory.generator(inputStream, fileName);
 
-            System.out.println("\u001b[1m\u001b[46mTítulo:\u001b[m " + title);
-            System.out.println("\u001b[1m\u001b[104mCapa:\u001b[m " + film.get("image"));
-            System.out.println("\u001b[1m\u001b[42m\u2B50Classificação:\u001b[m \u2B50" + film.get("imDbRating"));
+            System.out.println("\u001b[1m\u001b[46mTítulo:\u001b[m " + content.title());
+            System.out.println("\u001b[1m\u001b[104mCapa:\u001b[m " + content.urlImage());
+            //System.out.println("\u001b[1m\u001b[42m\u2B50Classificação:\u001b[m \u2B50" + content.get("imDbRating"));
             System.out.println(" ");
         }
     }

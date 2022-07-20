@@ -12,13 +12,22 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
 ## Challenges
 
 # Day one 
+    * Content: Dia de início do projeto, onde são apresentados os conhecimentos de como funciona uma API, uma pincelada no que é JSON juntamente com a explicação de como usar o Java para consumir APIs. Cria-se a classe App e um parser para o Json usando expressões regulares.
 
-    - [(API FORA DO AR)]Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.(API FORA DO AR)
-    - [x]Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!
-    - [ ]Colocar a chave da API do IMDB em algum lugar fora do código como um arquivo de configuração (p. ex, um arquivo .properties) ou uma variável de ambiente
+    - []Consumir o endpoint de filmes mais populares da API do IMDB. 
+        Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores 
+        séries e o que retorna as séries mais populares.(API FORA DO AR)
+    - [x]Usar sua criatividade para deixar a saída dos dados mais bonitinha: 
+        usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o 
+        terminal com cores, negrito e itálico usando códigos ANSI, e mais!
+    - [x]Colocar a chave da API do IMDB em algum lugar fora do código como um 
+        arquivo de configuração (p. ex, um arquivo .properties) ou uma variável de ambiente
     - [ ]Mudar o JsonParser para usar uma biblioteca de parsing de JSON como Jackson ou GSON
-    - [ ]Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
+    - [ ]Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, 
+        puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 # Day two
+    * Content: Nesse dia há mais mão na massa. Os instrutores ensinam o funcionamento maior do Java, em conjunto com a utilização de bibliotecas graficas para editar as imagens. O código fica um pouco mais desacoplado, mas ainda bagunçadinho.
+    Cria-se a "Fabrica" para os Stikers.
 
     - [x] Ler a documentação da classe abstrata InputStream.
     - [x] Centralizar o texto na figurinha.
@@ -27,9 +36,19 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
     - [x] Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
     - [x] Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!
     - [ ] Colocar contorno (outline) no texto da imagem.
-    - [ ] Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.
+    - [ ] Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao 
+        invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante
+        a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.
     - [ ] Fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
-    - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair imagem principal e contorná-la.
+    - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair 
+        imagem principal e contorná-la.
+# Day three
+    * Content: O aula de maior raciocínio. Aqui os instrutores auxiliam na refatoração, mostrando as vantagens de ter um código encapsulado, salientando boas práticas que deixam o código mais limpo e flúido. Aqui são criadas diversas classes que ajudam no desacoplamento do código.
+    - [x]Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
+    - [x]Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
+    - [x]Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
+    - [ ]Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
+    - [ ]Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. 
 
 ## License
 

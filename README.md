@@ -12,7 +12,9 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
 ## Challenges
 
 # Day one 
-    * Content: Dia de início do projeto, onde são apresentados os conhecimentos de como funciona uma API, uma pincelada no que é JSON juntamente com a explicação de como usar o Java para consumir APIs. Cria-se a classe App e um parser para o Json usando expressões regulares.
+    * Content: Dia de início do projeto, onde são apresentados os conhecimentos de como funciona uma API, uma 
+    pincelada no que é JSON juntamente com a explicação de como usar o Java para consumir APIs. 
+    Cria-se a classe App e um parser para o Json usando expressões regulares.
 
     - []Consumir o endpoint de filmes mais populares da API do IMDB. 
         Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores 
@@ -26,8 +28,9 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
     - [ ]Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, 
         puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 # Day two
-    * Content: Nesse dia há mais mão na massa. Os instrutores ensinam o funcionamento maior do Java, em conjunto com a utilização de bibliotecas graficas para editar as imagens. O código fica um pouco mais desacoplado, mas ainda bagunçadinho.
-    Cria-se a "Fabrica" para os Stikers.
+    * Content: Nesse dia há mais mão na massa. Os instrutores ensinam o funcionamento maior do Java, 
+    em conjunto com a utilização de bibliotecas graficas para editar as imagens. 
+    O código fica um pouco mais desacoplado, mas ainda bagunçadinho. Cria-se a "Fabrica" para os Stikers.
 
     - [x] Ler a documentação da classe abstrata InputStream.
     - [x] Centralizar o texto na figurinha.
@@ -43,7 +46,10 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
     - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair 
         imagem principal e contorná-la.
 # Day three
-    * Content: O aula de maior raciocínio. Aqui os instrutores auxiliam na refatoração, mostrando as vantagens de ter um código encapsulado, salientando boas práticas que deixam o código mais limpo e flúido. Aqui são criadas diversas classes que ajudam no desacoplamento do código.
+    * Content: O aula de maior raciocínio. Aqui os instrutores auxiliam na refatoração, mostrando as vantagens 
+    de ter um código encapsulado, salientando boas práticas que deixam o código mais limpo e flúido. 
+    Aqui são criadas diversas classes que ajudam no desacoplamento do código.
+    
     - [x]Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
     - [x]Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
     - [x]Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra

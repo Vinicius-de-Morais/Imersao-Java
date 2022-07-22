@@ -21,8 +21,12 @@ public class App {
         // ContentExtractor extractor = new IMDBContentExtractor();
 
         // nasa
-        String url = "https://api.nasa.gov/planetary/apod?api_key="+ NASA_API_KEY +"&start_date=2022-07-16";
-        ContentExtractor extractor = new NasaContentExtractor();
+        // String url = "https://api.nasa.gov/planetary/apod?api_key="+ NASA_API_KEY +"&start_date=2022-07-16";
+        // ContentExtractor extractor = new NasaContentExtractor();
+        
+        // local API
+        String url = "http://localhost:8080/languages";
+        ContentExtractor extractor = new IMDBContentExtractor();
         
         ClientHttp http = new ClientHttp();
         String json = http.searchData(url);        

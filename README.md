@@ -11,9 +11,10 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
 - ``Java 17``
 
 # Challenges
-
-## Day one 
-    * Content: Dia de início do projeto, onde são apresentados os conhecimentos de como funciona uma API, uma 
+    A imersão possui alguns desafios para instigar ainda mais curiosidade e aumentar o aprendizado.
+## Day one
+\
+    - Content: Dia de início do projeto, onde são apresentados os conhecimentos de como funciona uma API, uma 
     pincelada no que é JSON juntamente com a explicação de como usar o Java para consumir APIs. 
     Cria-se a classe App e um parser para o Json usando expressões regulares.
 
@@ -29,7 +30,8 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
     - [ ]Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, 
         puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 ## Day two
-    * Content: Nesse dia há mais mão na massa. Os instrutores ensinam o funcionamento maior do Java, 
+\
+    - Content: Nesse dia há mais mão na massa. Os instrutores ensinam o funcionamento maior do Java, 
     em conjunto com a utilização de bibliotecas graficas para editar as imagens. 
     O código fica um pouco mais desacoplado, mas ainda bagunçadinho. Cria-se a "Fabrica" para os Stikers.
 
@@ -47,7 +49,8 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
     - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair 
         imagem principal e contorná-la.
 ## Day three
-    * Content: O aula de maior raciocínio. Aqui os instrutores auxiliam na refatoração, mostrando as vantagens 
+\
+    - Content: O aula de maior raciocínio. Aqui os instrutores auxiliam na refatoração, mostrando as vantagens 
     de ter um código encapsulado, salientando boas práticas que deixam o código mais limpo e flúido. 
     Aqui são criadas diversas classes que ajudam no desacoplamento do código.
     
@@ -58,8 +61,9 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
     - [ ]Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente.
 
 ## Day Four
-    * Content: Foi o dia em que mais ultilizamos bibliotécas do java, salientando o Spring. Foi criado um novo 
-    projeto de API e a aula se passou em torno disso
+\
+    - Content: Foi o dia em que mais ultilizamos bibliotécas do java, salientando o Spring. Foi criado um novo projeto de API e a aula se passou em torno disso.
+    [repositório da API](https://github.com/Vinicius-de-Morais/Api-imersao-java)
 
     - [x]Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma 
         linguagem cadastrada;
@@ -70,6 +74,15 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
     - [ ]Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST;
     - [ ]Desafio supremo: Aplicar modificações parciais no recurso através do método PATCH, por exemplo,
          modificando o número de votos ou de pessoas que utilizam cada linguagem de programação.
+
+## Day Five
+\
+    - Content: O ultimo dia e aula da imersão. Uma aula ensiando o deploy do projeto ultilizando o Heroku.
+    [API no Heroku](https://vini-api-languages.herokuapp.com/languages)
+    - [x] Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou (linguagens de programação, filmes, músicas);
+    - [ ] Colocar a aplicação no cloud da Oracle;
+    - [ ] Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para que se possa fazer um ranking;
+    - [ ] Desafio supremo: Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a URL do conteúdo e já visualizar os stickers
 ## License
 
 Imersao-Java is [GNU General Public License v3.0](./LICENSE).

@@ -4,6 +4,7 @@
 ![Badge License](https://img.shields.io/github/license/Vinicius-de-Morais/Imersao-Java)
 
 Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e conhecer melhor a linguagem java!
+Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersao-java), pois faz parte do projeto
 
 ## ✔️ Tecnologia utilizada
 
@@ -58,7 +59,7 @@ Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e
 
 ## Day Four
     * Content: Foi o dia em que mais ultilizamos bibliotécas do java, salientando o Spring. Foi criado um novo 
-    [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersao-java) e a aula se passou em torno disso
+    projeto de API e a aula se passou em torno disso
 
     - [x]Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma 
         linguagem cadastrada;

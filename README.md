@@ -80,10 +80,15 @@ Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersa
     - Content: O ultimo dia e aula da imersão. Uma aula ensiando o deploy do projeto ultilizando o Heroku.
     [API no Heroku](https://vini-api-languages.herokuapp.com/languages)
     
-    - [x] Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou (linguagens de programação, filmes, músicas);
+    - [x] Compartilhe com seus amigos a sua URL do Heroku, para que eles possam consumir a sua API 
+        (com o padrão de atributos title e image) e gerar figurinhas do conteúdo que você utilizou;
     - [ ] Colocar a aplicação no cloud da Oracle;
-    - [ ] Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para que se possa fazer um ranking;
-    - [ ] Desafio supremo: Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a URL do conteúdo e já visualizar os stickers
+    - [ ] Implementar algum mecanismo de votação na API, para que outros amigos votem nas linguagens preferidas para 
+        que se possa fazer um ranking;
+    - [ ] Desafio supremo: Evoluir o projeto das três primeiras aula para que ele gere um bundle de stickers, 
+        para que se possa fazer o download e já incluir vários stickers no WhatsApp; Usar os conhecimentos aprendidos em 
+        alguma imersão React da Alura e fazer uma aplicação front-end para gerar esse bundle, onde possa se passar a 
+        URL do conteúdo e já visualizar os stickers
 ## License
 
 Imersao-Java is [GNU General Public License v3.0](./LICENSE).

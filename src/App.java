@@ -25,7 +25,7 @@ public class App {
         // ContentExtractor extractor = new NasaContentExtractor();
         
         // local API
-        String url = "http://localhost:8080/languages";
+        String url = "https://vini-api-languages.herokuapp.com/languages";
         ContentExtractor extractor = new IMDBContentExtractor();
         
         ClientHttp http = new ClientHttp();

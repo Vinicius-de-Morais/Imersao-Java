@@ -6,6 +6,13 @@
 Esse é um projeto de imersão da alura, com o fim de dar um primeiro mergulho e conhecer melhor a linguagem java!
 Também vizite [projeto de API](https://github.com/Vinicius-de-Morais/Api-imersao-java), pois faz parte do projeto
 
+| 🪧 Vitrine.Dev |     |
+| -------------  | --- |
+| ✨ Nome        | Imersao-Java
+| 🏷️ Tecnologias | Java, Spring, MongoDB, Heroku, Git
+| 🚀 URL         | https://vini-api-languages.herokuapp.com/languages
+| 🤿 Desafio | https://www.alura.com.br/imersao-java
+
 ## ✔️ Tecnologia utilizada
 
 - ``Java 17``
